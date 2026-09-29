@@ -2,6 +2,13 @@
 
 [![CI](https://github.com/taurrbond/digital-core-evidence-governance-demo/actions/workflows/ci.yml/badge.svg?branch=main)](https://github.com/taurrbond/digital-core-evidence-governance-demo/actions/workflows/ci.yml)
 
+## Verified Release
+
+- Stable release: [`v0.1.0`](https://github.com/taurrbond/digital-core-evidence-governance-demo/releases/tag/v0.1.0)
+- Release commit: [`3a233a0ffdb65f44fca61fade59eac859b54eb81`](https://github.com/taurrbond/digital-core-evidence-governance-demo/commit/3a233a0ffdb65f44fca61fade59eac859b54eb81)
+- CI: GitHub Actions passes on Python 3.10 and 3.13.
+- Reproducibility: `MANIFEST.sha256` verification plus `./demo.sh`.
+
 Minimal, local-only portfolio demonstrator derived from confirmed Digital Core source patterns.
 
 ## What it demonstrates
