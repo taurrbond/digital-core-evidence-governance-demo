@@ -1,5 +1,7 @@
 # Digital Core Evidence Governance Demo v0.1
 
+[![CI](https://github.com/taurrbond/digital-core-evidence-governance-demo/actions/workflows/ci.yml/badge.svg?branch=main)](https://github.com/taurrbond/digital-core-evidence-governance-demo/actions/workflows/ci.yml)
+
 Minimal, local-only portfolio demonstrator derived from confirmed Digital Core source patterns.
 
 ## What it demonstrates
