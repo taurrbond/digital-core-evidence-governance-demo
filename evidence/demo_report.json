@@ -1,0 +1,193 @@
+{
+  "demo": "Digital Core Evidence Governance Demo",
+  "version": "0.1",
+  "fixture": "synthetic_control_plane.xlsx",
+  "fixture_sha256": "c6692d39cf88b784e9889961457f544b636c625979331d1f16c41c983b168edc",
+  "pipeline": [
+    "lossless_staging",
+    "normalization",
+    "validation",
+    "governance_gate",
+    "audit_report"
+  ],
+  "normalized_counts": {
+    "sources": 3,
+    "facts": 3,
+    "money_ledger": 2,
+    "conflicts": 2,
+    "actions": 4,
+    "permission_snapshots": 3
+  },
+  "staging_nonempty_row_count": 20,
+  "validation_summary": {
+    "ERROR": 0,
+    "WARN": 0
+  },
+  "validation_issues": [],
+  "governance_gate": {
+    "gate_id": "DC-EVIDENCE-DEMO-GATE-001",
+    "gate_version": "0.1",
+    "status": "PASS_DEMO_ONLY",
+    "tests_total": 17,
+    "tests_passed": 17,
+    "tests_failed": 0,
+    "external_execution_allowed": false,
+    "results": [
+      {
+        "id": "DC-DEMO-001",
+        "status": "PASS",
+        "actual": [
+          "01_Sources",
+          "03_Facts_Money",
+          "04_Conflicts",
+          "05_Actions",
+          "13_Permission_Snapshot"
+        ],
+        "expected": [
+          "01_Sources",
+          "03_Facts_Money",
+          "04_Conflicts",
+          "05_Actions",
+          "13_Permission_Snapshot"
+        ]
+      },
+      {
+        "id": "DC-DEMO-002",
+        "status": "PASS",
+        "actual": 20,
+        "expected": 20
+      },
+      {
+        "id": "DC-DEMO-003",
+        "status": "PASS",
+        "actual": 3,
+        "expected": 3
+      },
+      {
+        "id": "DC-DEMO-004",
+        "status": "PASS",
+        "actual": 3,
+        "expected": 3
+      },
+      {
+        "id": "DC-DEMO-005",
+        "status": "PASS",
+        "actual": 2,
+        "expected": 2
+      },
+      {
+        "id": "DC-DEMO-006",
+        "status": "PASS",
+        "actual": 2,
+        "expected": 2
+      },
+      {
+        "id": "DC-DEMO-007",
+        "status": "PASS",
+        "actual": 4,
+        "expected": 4
+      },
+      {
+        "id": "DC-DEMO-008",
+        "status": "PASS",
+        "actual": 3,
+        "expected": 3
+      },
+      {
+        "id": "DC-DEMO-009",
+        "status": "PASS",
+        "actual": true,
+        "expected": true
+      },
+      {
+        "id": "DC-DEMO-010",
+        "status": "PASS",
+        "actual": [
+          "L1",
+          "L2",
+          "L3"
+        ],
+        "expected": "subset L1-L5"
+      },
+      {
+        "id": "DC-DEMO-011",
+        "status": "PASS",
+        "actual": [
+          "A",
+          "B"
+        ],
+        "expected": "subset A-E"
+      },
+      {
+        "id": "DC-DEMO-012",
+        "status": "PASS",
+        "actual": true,
+        "expected": true
+      },
+      {
+        "id": "DC-DEMO-013",
+        "status": "PASS",
+        "actual": 80,
+        "expected": 80
+      },
+      {
+        "id": "DC-DEMO-014",
+        "status": "PASS",
+        "actual": [
+          [
+            "READY",
+            "EXTERNAL_EXECUTION",
+            true
+          ]
+        ],
+        "expected": [
+          [
+            "READY",
+            "EXTERNAL_EXECUTION",
+            true
+          ]
+        ]
+      },
+      {
+        "id": "DC-DEMO-015",
+        "status": "PASS",
+        "actual": [],
+        "expected": []
+      },
+      {
+        "id": "DC-DEMO-016",
+        "status": "PASS",
+        "actual": 3,
+        "expected": 3
+      },
+      {
+        "id": "DC-DEMO-017",
+        "status": "PASS",
+        "actual": [
+          "SRC-SYN-001",
+          "SRC-SYN-002",
+          "SRC-SYN-003",
+          "FACT-SYN-001",
+          "FACT-SYN-002",
+          "FACT-SYN-003",
+          "CON-SYN-001",
+          "CON-SYN-002",
+          "ACT-SYN-001",
+          "ACT-SYN-002",
+          "ACT-SYN-003",
+          "ACT-SYN-004",
+          "FILE-SYN-001",
+          "FILE-SYN-002",
+          "FILE-SYN-003"
+        ],
+        "expected": "all identifiers synthetic"
+      }
+    ]
+  },
+  "side_effects": {
+    "network": false,
+    "database": false,
+    "external_writes": false,
+    "local_report_only": true
+  }
+}
